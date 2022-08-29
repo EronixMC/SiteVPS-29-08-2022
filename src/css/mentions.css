@@ -1,0 +1,42 @@
+.mention {
+    background: #101010;
+}
+
+.mention .container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mentionBox {
+    background: #141414;
+    padding: 14px 28px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mentionBoxTitre {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: Sen, sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.mentionBoxDesc {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Fredoka', sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.mentionBoxDesc a {
+    color: #f9bb12;
+}

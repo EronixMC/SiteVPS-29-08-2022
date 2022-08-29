@@ -1,0 +1,70 @@
+.forum {
+    background: #101010;
+}
+
+.forum .container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forumBox {
+    background: #151515;
+    padding: 14px 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.forumBoxTitre {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: Sen, sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.contentForumLink {
+    display: flex;
+    flex-direction: column;
+}
+
+.forumBoxLink {
+    padding: 20px 20px;
+    color: #f9bb12;
+    border-left: 3px solid #463300;
+    line-height: normal;
+    font-weight: 600;
+    background: #131313;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    transition: .5s ease-out;
+    border-radius: 5px;
+}
+
+.forumBoxLink i {
+    margin-right: 10px;
+}
+.forumBoxLink span{
+    color: #f9bb12;
+}
+
+.forumBoxLink:hover {
+    border-left: 3px solid #f9bb12;
+    background: #101010;
+}
+
+.forumsBoxa {
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1280px) {
+    .forum .container {
+        width: 80%;
+    }
+}

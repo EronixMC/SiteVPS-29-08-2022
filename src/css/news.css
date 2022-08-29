@@ -1,0 +1,128 @@
+.news {
+    background: #101010;
+}
+
+.news .container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsBox {
+    width: 100%;
+    background: #1f1e1e;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.newsBox .containerBox {
+    width: 100%;
+}
+
+.lowerTop {
+    display: flex;
+    flex-direction: column;
+}
+
+.lowerTop .lowerDetails {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lowerTop .lowerTitre {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: Sen, sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.lowerPost {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #767676;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.lowerDate {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #767676;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.lowerPost span, .lowerDate span {
+    color: #fff;
+}
+
+.lowerCenter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lowerCenter img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    pointer-events: none;
+    height: 500px;
+}
+
+.lowerCenter iframe {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.lowerBottom p {
+    color: #767676;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1280px) {
+    .news .container {
+        width: 90%;
+    }
+    
+    .newsBox {
+        width: 90%;
+    }
+
+    .lowerCenter img {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        pointer-events: none;
+        height: auto;
+    }
+    
+    .lowerCenter iframe {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+}

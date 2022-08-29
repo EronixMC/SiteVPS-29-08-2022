@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta data-n-head="ssr" charset="utf-8">
+    <title>Eronix | Inscription</title>
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, user-scalable=no">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Eronix est un serveur Minecraft PvP Factions Moddées, 100% FarmToWin ! 
+
+    Créer en 2022, Eronix vous propose une étendu sur de nombreux défis évènements et plus encore" >
+    <link href="./src/css/style.css" rel="stylesheet" />
+    <link href="./src/css/police.css" rel="stylesheet" />
+    <link href="./src/css/header.css" rel="stylesheet" />
+    <link href="./src/css/login.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./src/img/standard.gif">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css">
+</head>
+
+<body id="body">
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="container">
+                <div class="sidebarMenu">
+                    Menu
+                </div>
+                <button class="headerMenuClose" id="headerMenuClose"><i class="fa-solid fa-close"></i></button>
+            </div>
+        </div>
+        <div class="sidebar-content">
+            <a class="aBoxSidebar" href="./accueil"><i class="fa-solid fa-arrow-up-right-from-square"></i> Accueil</a>
+            <a class="aBoxSidebar" href="./forums"><i class="fa-solid fa-arrow-up-right-from-square"></i> Forums</a>
+            <a class="aBoxSidebar" href="./staff"><i class="fa-solid fa-arrow-up-right-from-square"></i> Staff</a>
+            <a class="aBoxSidebar" href="https://discord.gg/38UJhPx7ah"><i class="fa-solid fa-arrow-up-right-from-square"></i> Support</a>
+            <a class="aBoxSidebar"><i class="fa-solid fa-arrow-up-right-from-square"></i> Boutique</a>
+        </div>
+    </div>
+
+    <div class="section topla">
+        <div class="headerBack"></div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="content contentTop">
+                <div class="contentTopBox">
+                    <a class="headerTopLogin" href="./connexion">Connexion <i class="fa-solid fa-right-to-bracket"></i></a>
+                </div>
+            </div>
+            <div class="content contentBottom">
+                <div class="contentBottomBox">
+                    <div class="contentBottomBoxLeft">
+                        <button class="headerMenu" id="headerMenu"><i class="fa-solid fa-bars"></i></button>
+                        <div class="containerLink">
+                            <a class="headerBoxLink active" href="./accueil">Accueil</a>
+                            <a class="headerBoxLink" href="./forums">Forums</a>
+                            <a class="headerBoxLink" href="./staff">Staff</a>
+                            <a class="headerBoxLink" href="https://discord.gg/38UJhPx7ah">Support</a>
+                            <a class="headerBoxLink">Boutique</a>
+                        </div>
+                    </div>
+                    <div class="contentBottomBoxRight">
+                        <div class="headerServerName">
+                            eronix
+                        </div>
+                        <div class="headerServerCount">
+                            <span>0</span> Joueur connecté
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="section login">
+        <div class="container">
+            <div class="loginBox">
+                <div class="loginBoxTitre">Connexion</div>
+                <div class="alertBox">
+                    <i class="fa-solid fa-circle-exclamation"></i><span>Connexion temporairement indisponible</span>
+                </div>
+                <div id="form">
+                    <input id="pseudo" type="text" class="input" required placeholder="Pseudo" />
+                    <input id="email" type="text" class="input" required placeholder="Adresse email" />
+                    <input id="password" type="password" class="input" required placeholder="Mot de passe" />
+                    <div class="btn-flex">
+                        <button class="loginBtn" onclick="register()">Inscription <i
+                                class="fa-solid fa-right-to-bracket"></i></button>
+                        <a href="./connexion">Se connecter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section footer">
+        <div class="container">
+            <div class="content footerTop">
+                <div class="footerBox">
+                    <div class="footer-titleBox">à propos</div>
+                    <p>
+                        eronix est un serveur Minecraft PvP Factions Moddées, 100% FarmToWin!<br><br>
+                        Créer en 2022, eronix vous propose une étendu sur de nombreux défis évènements et plus encore
+                        !
+                    </p>
+                    <a class="aBoxCGV" href="./conditions-générales-de-vente"><i class="fa-solid fa-arrow-up-right-from-square"></i> Conditions générales de vente</a>
+                    <a class="aBoxCGV" href="./mentions-legales"><i class="fa-solid fa-arrow-up-right-from-square"></i> Mentions légales</a>
+                </div>
+                <div class="footerBox">
+                    <div class="footer-titleBox">liens utiles</div>
+                    <a class="aBoxLink" href="./accueil"><i class="fa-solid fa-arrow-up-right-from-square"></i> Accueil</a>
+                    <a class="aBoxLink" href="./forums"><i class="fa-solid fa-arrow-up-right-from-square"></i> Forums</a>
+                    <a class="aBoxLink" href="./staff"><i class="fa-solid fa-arrow-up-right-from-square"></i> Staff</a>
+                    <a class="aBoxLink" href="https://discord.gg/38UJhPx7ah"><i class="fa-solid fa-arrow-up-right-from-square"></i> Support</a>
+                    <a class="aBoxLink"><i class="fa-solid fa-arrow-up-right-from-square"></i> Boutique</a>
+                </div>
+                <div class="footerBox">
+                    <div class="footer-titleBox">Nous rejoindre</div>
+                    <a href="./launcher" class="aBoxCGV"><i class="fa-solid fa-arrow-up-right-from-square"></i> Notre Launcher</a>
+                    <a class="aBoxCGV" href="https://discord.gg/38UJhPx7ah"><i class="fa-solid fa-arrow-up-right-from-square"></i> Notre Discord</a>
+                </div>
+                <div class="footerBox">
+                    <div class="footer-titleBox">Nous supporter</div>
+                    <p>En soutenant notre serveur, vous nous permettez d'assurer le développement de celui-ci, Merci à
+                        vous !</p>
+                    <a class="aBoxBoutique">Boutique <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <span class="footerSpanSepar"></span>
+            <div class="content footerBottom">
+                <div class="footerB-left">
+                    <span>© eronix 2022</span>
+                </div>
+                <div class="footerB-right">
+                    <span>Développer par <a>SheyzoYT</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <!--<script src="./src/js/script.js"></script>-->
+
+
+    <script>
+const firebaseConfig = {
+  apiKey: "AIzaSyBexyNPogru8Jc7sq4FoZBrFEckPrmBS8c",
+  authDomain: "eronixmc.firebaseapp.com",
+  databaseURL: "https://eronixmc-default-rtdb.firebaseio.com",
+  projectId: "eronixmc",
+  storageBucket: "eronixmc.appspot.com",
+  messagingSenderId: "469680302705",
+  appId: "1:469680302705:web:b2475a19ba090001e109d0",
+  measurementId: "G-6Z685TD6MN"
+};
+        firebase.initializeApp(firebaseConfig);
+
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+            }
+        })
+
+        async function register() {
+            const db = firebase.database();
+            const username = document.getElementById("pseudo").value
+            const email = document.getElementById("email").value
+            const password = document.getElementById("password").value
+            let userId, user;
+            try {
+                let userCredential = await firebase.auth().createUserWithEmailAndPassword(email, password)
+                if (!userCredential?.user?.uid) {
+                    throw new Error("There is no UID!", userCredential);
+                }
+                user = userCredential.user;
+                userId = userCredential.user.uid;
+                console.log(`UID is: ${userId}`);
+
+                await db.ref("users/" + userId).set({
+                    username: username,
+                    password: password,
+                    uid: userId,
+                    email: email,
+                    date: new Date()
+                });
+                console.log(`write to RTDB finished`);
+                alert("Compte créer !")
+                return "success!"
+            } catch (ex) {
+                console.error(ex);
+                document.getElementById("error").innerHTML = ex.message
+            }
+        }
+    </script>
+
+    <script>
+        var headerMenu = document.getElementById("headerMenu");
+        var headerMenuClose = document.getElementById("headerMenuClose");
+        var sidebar = document.getElementById("sidebar");
+        var sidebarContent = document.getElementById("sidebarContent");
+        var body = document.getElementById("body");
+
+        headerMenu.onclick = function () {
+            sidebar.style.display = "flex";
+            headerMenu.style.display = "none";
+        }
+
+        headerMenuClose.onclick = function () {
+            headerMenu.style.display = "block";
+            sidebar.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

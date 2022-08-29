@@ -1,0 +1,290 @@
+.sidebar {
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+    width: 300px;
+    height: 100vh;
+    background: #101010;
+    display: none;
+    flex-direction: column;
+    color: #fff;
+}
+
+header a {
+    color: #fff;
+}
+
+.sidebar-header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: url("../img/backgroundSky.png") no-repeat top/cover;
+}
+
+.sidebar-header .container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: #00000099;
+}
+
+.sidebarMenu {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: Sen, sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+.headerMenuClose {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 25px;
+    color: #fff;
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.aBoxSidebar {
+    padding: 8px 14px;
+    color: #fff;
+    border-left: 3px solid #101010;
+    line-height: normal;
+    font-weight: 600;
+    background: #101010;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    transition: .5s ease-out;
+}
+
+.aBoxSidebar:hover {
+    color: #f9bb12;
+    border-left: 3px solid #f9bb12;
+}
+
+
+.topla {
+    height: 120px;
+}
+
+.headerBack {
+    background: url("../img/backgroundSky.png") no-repeat top/cover;
+    background-position: -0px;
+    -webkit-box-shadow: 0 -3px hsl(0deg 0% 100% / 3%) inset;
+    -moz-box-shadow: 0 -3px hsla(0, 0%, 100%, 0.025) inset;
+    box-shadow: inset 0 -3px hsl(0deg 0% 100% / 3%);
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: blur(3px);
+}
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    z-index: 5;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+}
+header .container .contentTop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: #00000099;
+    height: 50px;
+}
+header .container .contentTop .contentTopBox {
+    width: 75%;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerTopLogin {
+    background: #00000080;
+    padding: 8px 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .5s ease-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+header .container .contentBottom {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: #00000060;
+    height: 70px;
+}
+
+header .container .contentBottom .contentBottomBox {
+    width: 70%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .container .contentBottom .contentBottomBox .contentBottomBoxLeft {
+    width: 70%;
+    height: 70px;
+    display: flex;
+}
+
+header .container .contentBottom .contentBottomBox .contentBottomBoxLeft .headerMenu {
+    border: none;
+    padding: 8px 14px;
+    background: transparent;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .5s ease-out;
+}
+
+.contentBottomBox .contentBottomBoxRight {
+    width: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerServerName {
+    text-transform: uppercase;
+    color: #f9bb12;
+    font-weight: 800;
+    font-size: 15px;
+    font-family: Sen, sans-serif;
+    margin-left: auto;
+}
+
+.headerServerCount {
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Sen, sans-serif;
+    margin-left: auto;
+}
+
+.containerLink {
+    height: 70px;
+    display: flex;
+    width: auto;
+}
+
+.headerBoxLink {
+    padding: 10px 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+    transition: .5s ease-out;
+    border-radius: 5px;
+}
+
+.headerBoxLink.active::before {
+    content: '';
+    display: block;
+    background: #f9bb12;
+    height: 3px;
+    width: 24px;
+    border-radius: 4px;
+    position: relative;
+    top:26px;
+    margin: 0 auto;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 15%);
+}
+
+.headerBoxLink:hover {
+    color: #f9bb12;
+    background: #00000066;
+}
+
+.headerBoxLink.active {
+    color: #f9bb12;
+    background: #00000066;
+}
+
+.headerMenu {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .headerMenu {
+        display: none;
+    }
+    header .container .contentBottom .contentBottomBox {
+        width: 75%;
+    }
+
+    .headerMenu {
+        margin-left: 6%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .headerMenu {
+        display: block;
+    }
+    header .container .contentTop .contentTopBox {
+        width: 85%;
+    }
+    header .container .contentBottom .contentBottomBox {
+        width: 85%;
+    }
+    .containerLink {
+        display: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    header .container .contentBottom .contentBottomBox {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .contentBottomBox .contentBottomBoxRight {
+        display: none;
+    }
+}
+

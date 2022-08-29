@@ -1,0 +1,105 @@
+.staff {
+    background: #101010;
+}
+
+.staff .container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.staffBoxTitre {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: Sen, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerStaff {
+    background: #151515;
+    padding: 14px 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentStaff {
+    background: #151515;
+    padding: 14px 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.staffBox {
+    padding: 4px 14px;
+    background: #101010;
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+
+.staffBox .staffContent {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.staffBox .staffContent img {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 15px;
+    border: 2px solid #5a5a5a;
+}
+.staffBox .staffContent .staffPseudo {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.staffBox .staffContent .staffRole {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.fondateur {
+    color: #bb0000;
+}
+.administrateur {
+    color: #ff0000;
+}
+.responsable {
+    color: #3b53ff;
+}
+.modérateur {
+    color: #ff3d3d;
+}
+.helpeur {
+    color: #e4b400;
+}
+.test {
+    color: #5cffb0;
+}

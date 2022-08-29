@@ -1,0 +1,92 @@
+.login {
+    background: #101010;
+}
+
+.login .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loginBox {
+    background: transparent;
+    padding: 14px 28px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.loginBox #form {
+    background: #1f1e1e;
+    padding: 14px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginBox #form input {
+    font-size: 15px;
+    color: #ffffff;
+    background: #101010;
+    border: 1px solid#232323;
+    border-radius: 4px;
+    padding: 8px 14px;
+    margin: 2.5px;
+}
+.loginBox #form button {
+    border: none;
+    padding: 10px 20px;
+    color: #141414;
+    line-height: normal;
+    font-weight: 600;
+    background: #f9bb12;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    border-bottom: 3px solid #cc9a12;
+    transition: .5s ease-out;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Sen, sans-serif;
+}
+
+.loginBox #form button i {
+    color: #141414;
+}
+
+.loginBox #form a {
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Sen, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.loginBox #form .btn-flex {
+    display: flex;
+    width: 100%;
+}
+
+.loginBoxTitre {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: Sen, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+    .login .container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+}

@@ -1,0 +1,195 @@
+.chatPost {
+    background: #101010;
+}
+
+.chatPost .container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aBoxAdd {
+    padding: 10px 20px;
+    color: #141414;
+    line-height: normal;
+    font-weight: 600;
+    background: #f9bb12;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    border-radius: 6px;
+    width: fit-content;
+    border-bottom: 3px solid #cc9a12;
+    transition: .5s ease-out;
+}
+.aBoxAdd i {
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.aBoxAdd:hover {
+    background: #cc9a12;
+    border-bottom: 3px solid #f9bb12;
+}
+
+.chatPostBox {
+    background: #151515;
+    padding: 14px 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.chatPostBoxTitre {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: Sen, sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.contentPostLink {
+    display: flex;
+    flex-direction: column;
+}
+
+.chatBoxPost {
+    padding: 20px 20px;
+    color: #f9bb12;
+    border-left: 3px solid #463300;
+    line-height: normal;
+    font-weight: 600;
+    background: #131313;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    transition: .5s ease-out;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.chatBoxPost .content img {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.chatBoxPost .content .pseudoPost {
+    color: #757575;
+    display: flex;
+    margin-left: 10px;
+}
+
+.chatBoxPost .content .pseudoPost span {
+    color: #fff;
+}
+
+.chatBoxPost .content .pseudoPost .datePost{
+    margin-left: 5px;
+    font-size: 13px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.chatBoxPost .content .pseudoPost .datePost span{
+    color: #757575;
+}
+
+.chatBoxPost .content .contenuPost {
+    margin-top: 5px;
+    color: #aaaaaa;
+    display: flex;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+.createForum {
+    display: none;
+    position: fixed;
+    z-index: 15;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: #000000c2;
+}
+
+#createForumContent {
+    background: #1f1e1e;
+    padding: 14px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30%;
+}
+
+#createForumContent input {
+    font-size: 15px;
+    color: #ffffff;
+    background: #101010;
+    border: 1px solid#232323;
+    border-radius: 4px;
+    padding: 8px 14px;
+    margin: 2.5px;
+}
+#createForumContent button {
+    border: none;
+    padding: 10px 20px;
+    color: #141414;
+    line-height: normal;
+    font-weight: 600;
+    background: #f9bb12;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    border-bottom: 3px solid #cc9a12;
+    transition: .5s ease-out;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Sen, sans-serif;
+}
+
+#createForumContent button i {
+    color: #141414;
+}
+
+#createForumClose {
+    font-size: 20px;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top:20px;
+}
+
+#createForumClose i {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1280px) {
+    #createForumContent {
+        width: 80%;
+    }    
+}

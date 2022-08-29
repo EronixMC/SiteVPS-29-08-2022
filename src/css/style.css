@@ -1,0 +1,261 @@
+* {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+}
+
+/* {pointer-events: none;}*/
+/*#4752c4;*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #101010;
+    color: #fff;
+    border: none;
+}
+
+.section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    z-index: 4;
+}
+
+/*-----[Footer]-----*/
+.footer {
+    background: #101010;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .container .content {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .container .footerTop {
+    justify-content: space-between;
+}
+
+.footer .container .footerTop .footerBox {
+    padding: 8px;
+    background: transparent;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-titleBox {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: Sen, sans-serif;
+}
+
+.footer .container .footerTop .footerBox p {
+    color: #767676;
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 700;
+    margin: 0 0 25px;
+}
+
+.aBoxCGV {
+    padding: 8px 14px;
+    color: #f9bb12;
+    border-left: 3px solid #f9bb12;
+    line-height: normal;
+    font-weight: 600;
+    background: #101010;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    transition: .5s ease-out;
+}
+
+.aBoxCGV:hover {
+    color: #cc9a12;;
+}
+
+.aBoxLink {
+    padding: 8px 14px;
+    color: #767676;
+    line-height: normal;
+    font-weight: 600;
+    background: transparent;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    transition: .5s ease-out;
+}
+
+.aBoxLink:hover {
+    color: #fff;
+}
+
+.aBoxLink i {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.aBoxBoutique {
+    padding: 10px 20px;
+    color: #141414;
+    line-height: normal;
+    font-weight: 600;
+    background: #f9bb12;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 6px;
+    width: fit-content;
+    border-bottom: 3px solid #cc9a12;
+    transition: .5s ease-out;
+}
+
+.aBoxBoutique:hover {
+    background: #cc9a12;
+    border-bottom: 3px solid #f9bb12;
+}
+
+.aBoxBoutique i {
+    margin-left: 10px;
+}
+
+.footerSpanSepar {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #1a1a1a;
+    height: 3px;
+}
+
+.footerBottom {
+    width: 100%;
+    display: flex;
+}
+
+.footerB-left {
+    padding: 14px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footerB-left span {
+    color: #767676;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.footerB-right {
+    padding: 14px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+.footerB-right span {
+    color: #767676;
+    line-height: normal;
+    font-weight: 600;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.footerB-right span a {
+    color: #f9bb12;
+}
+
+/*-----[Footer]-----*/
+
+@media screen and (max-width: 1280px) {
+    .footer .container .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .container .footerTop .footerBox, .footerB-left, .footerB-right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footerB-left, .footerB-right {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .footerBottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.alertBox {
+    padding: 20px 14px;
+    background: #141414;
+    border-radius: 5px;
+    margin: 20px;
+    border-left: 3px solid red;
+    border-right: 1px solid #1a1a1a;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    font-family: Sen, sans-serif;
+    font-weight: 500;
+}
+
+.alertBox i {
+    font-size: 20px;
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.alertBox span {
+    color: red;
+}
+
+
+.download {
+    background: #101010;
+}
+
+.download .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.download .container .downBox {
+    background: #4444;
+    padding: 8px 16px;
+    height: 50px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.download .container .downBox a {
+    margin-left: auto;
+    margin-right: auto;
+}
